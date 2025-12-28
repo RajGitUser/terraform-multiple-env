@@ -1,9 +1,9 @@
-🌐 Terraform Multiple Environments
+# Terraform Multiple Environments
 
 A Terraform infrastructure-as-code repository that enables you to provision and manage cloud infrastructure consistently across multiple environments (e.g., dev, staging, and prod).
 This project demonstrates scalable, repeatable, and environment-specific deployments using Terraform configurations and variables.
 
-🧠 About
+# About
 
 This repository implements Terraform configurations structured to support multiple environment deployments while minimizing code duplication. It allows you to maintain one central Terraform codebase that can be adapted to provision distinct infrastructure setups for different environments using environment-specific configurations or variable files. 
 TerraTeam
@@ -22,7 +22,7 @@ Root files (main.tf, variables.tf, outputs.tf) — Core infrastructure definitio
 
 backend.tf — Backend configuration to manage Terraform state.
 
-🚀 Prerequisites
+# Prerequisites
 
 Make sure you have the following installed:
 
@@ -31,12 +31,12 @@ Make sure you have the following installed:
 ✔ Git and access to this repository
 ✔ Optional: Remote state backend setup
 
-🛠️ Usage
-1. Clone the repository
+# Usage
+# 1. Clone the repository
 git clone https://github.com/RajGitUser/terraform-multiple-env.git
 cd terraform-multiple-env
 
-2. Choose an Environment
+# 2. Choose an Environment
 
 Terraform configurations for each environment are isolated in folders under environments/.
 
@@ -44,23 +44,23 @@ For example, to work with the dev environment:
 
 cd environments/dev
 
-3. Initialize Terraform
+# 3. Initialize Terraform
 terraform init
 
 
 This will set up providers and backend configuration.
 
-4. Validate & Plan
+# 4. Validate & Plan
 terraform validate
 terraform plan -var-file="terraform.tfvars"
 
-5. Apply Infrastructure
+# 5. Apply Infrastructure
 terraform apply -var-file="terraform.tfvars"
 
 
 Repeat these commands in the relevant environment directory to deploy infrastructure for that environment.
 
-⚙️ Managing Multiple Environments
+# Managing Multiple Environments
 
 This repository supports multi-environment management through separation of environment specific configuration (Terraform variable files or folder environments). This helps ensure:
 
@@ -69,7 +69,7 @@ This repository supports multi-environment management through separation of envi
 ✔ Consistent infrastructure patterns across dev, staging, prod, etc. 
 TerraTeam
 
-🧰 Best Practices
+# Best Practices
 
 Use remote state (e.g., S3, GCS, Terraform Cloud) to securely manage state files
 
@@ -81,7 +81,7 @@ Stack Overflow
 
 Protect sensitive data with .tfvars files and environment variables
 
-🤝 Contributing
+# Contributing
 
 Contributions are welcome! You can:
 
