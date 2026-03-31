@@ -1,5 +1,4 @@
-
-variable "project" {
+variable "project"{
     default = "roboshop"
 }
 
@@ -8,13 +7,14 @@ variable "environment" {
 }
 
 variable "ami_id" {
-  type = string
-  default    = "ami-09c813fb71547fc4f"
+    type = string
+    default     = "ami-09c813fb71547fc4f"
 }
 
 variable "instance_type" {
     type = string
 }
+
 
 variable "cidr" {
     type = list
@@ -29,14 +29,15 @@ variable "ingress_to_port" {
     default = 0
 }
 
-variable "engress_from_port" {
+variable "egress_from_port" {
     default = 0
 }
 
-variable "engress_to_port" {
+variable "egress_to_port" {
     default = 0
 }
 
 variable "protocol" {
-    default = -1
+    type = string
+    default = "-1"
 }
